@@ -1,11 +1,17 @@
 #DnD charactor calculator
 #this is declaring what the classes and races
-strength = 10 #remember that this is for debugging
-dex = 10
-con = 10
-intel = 10
-wis = 10
-carisma = 10
+import random
+strength = random.randint(1,20)
+dex = random.randint(1,20)
+con = random.randint(1,20)
+intel = random.randint(1,20)
+wis = random.randint(1,20)
+carisma = random.randint(1,20)
+print('These are your stats I rolled them for you so you do not have to worry about it.')
+print('Strength ',strength)
+print('Dextarity',dex)
+print('Constitution',con)
+
 print('Please choose your class.')
 classes = 'Barbarian' #', ' 'Bard' #the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
 print(classes)
