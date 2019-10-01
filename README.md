@@ -1,1 +1,1 @@
-# DnD-caritor-calculator
+# DnD-caractor-calculator
