@@ -27,8 +27,12 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
     print()
     print('Unarmored Defense is a passive skill for barbarians. ')
     print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constiusion modifier.')
+    races = ['Gnome'] #the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
+    print('Now please pick the race of your character.')
+    print(races)
+    usrace = input()
+    if usrace == "gnome" or usrace == "Gnome":
+        intel = intel + 2
 
 else:
     print('Please pick your class, and be sure that it is spelled correctly.')
-
-races = ['Gnome'] #the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
