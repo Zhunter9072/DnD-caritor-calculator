@@ -22,8 +22,24 @@ def gnome():
         print('Gnomish cunning You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.')
 
 def dwarf():
-    print('You have chosen Dwarf.')
+    print('You have chosen Dwarf. This means that you have Darkvision, Dwarven resilience, Dwarven combat training, and Stone cutting')
     print()
+    print('Darkvision is \"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.\"')
+    print('Dwarven Resilience is \"You have advantage on saving throws against poison,/ and you have resistance against poison damage (explained in the \“Combat\” section).\"')
+    print('Dwarven combat training \"You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.\"')
+    print('Stonecutting is \"Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.\"')
+    print('Please choose one of these three artisan\'s tools. Smiths tools, Brewer\'s tools, or Mason\'s tools.')
+    art = input()
+    if art == "smith\'s tools" or art == "Smith\'s tools" or art == "smiths tools" or art == "Smiths tools":
+        print('You have proficancy with Smith\'s tools.')
+    elif art == "brewer\'s tools" or art == "Brewer\'s tools" or art == "brewers tools" or art == "Brewers tools":
+        print('You have proficancy with Brewer\'s tools.')
+    elif art == "mason\'s tools" or art == "Mason\'s tools" or art == "masons tools" or art == "Masons tools":
+        print('You have proficancy with Mason\'s tools.')
+    else:
+        print('You may have spelled your answer incorrectly.')
+
+
 
 def barbarian():
     print('You have chosen Barbarian. This means that you have Rage, and Unarmored defense.')
@@ -50,6 +66,7 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
         intel = intel + 2
         gnome()
     elif usrace == "dwarf" or "Dwarf":
+        con = con + 2
         dwarf()
 
 else:
