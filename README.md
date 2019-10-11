@@ -1,1 +1,1 @@
-# DnD-charactor-calculator
+This is a school project. What it does is it will assist you in building your own dungeons and dragons character. It is set up for the 5e edition of DnD and I have no plans to change that. it will ask for input and it does require that you spell every thing correct.
