@@ -1,33 +1,42 @@
-#DnD charactor calculator
-#this is declaring what the classes and races
+# DnD charactor calculator
+# this is declaring what the classes and races
 import random
-strength = random.randint(1,20)
-dex = random.randint(1,20)
-con = random.randint(1,20)
-intel = random.randint(1,20)
-wis = random.randint(1,20)
-char = random.randint(1,20)
+strength = random.randint(1, 20)
+dex = random.randint(1, 20)
+con = random.randint(1, 20)
+intel = random.randint(1, 20)
+wis = random.randint(1, 20)
+char = random.randint(1, 20)
 print('These are your stats I rolled them for you so you do not have to worry about it.')
-print('Strength ',strength)
-print('Dexterity',dex)
-print('Constitution',con)
-print('Intelligence',intel)
-print('Wisdom',wis)
-print('Charisma',char)
+print('Strength ', strength)
+print('Dexterity', dex)
+print('Constitution', con)
+print('Intelligence', intel)
+print('Wisdom', wis)
+print('Charisma', char)
 print('Please choose your class.')
+lang = "Abyssal, " "Celestial, " "Deep Speech, " "Draconic, " "Dwarvish, " "Elvish, " "Giant, " "Gith, " "Gnomish, " "Goblin, " "Halfling, " "Infernal, " "Kraul, " "Loxodon, " "Minotaur, " "Orc, " "Primordial, " "Sylvan, " "Undercommon."
+
+
+def darkvision():
+    print("Darkvision is a trait of your race which enables you to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.")
+
+
 def gnome():
-        print('You have chosen to be a Gnome. This means that you have Darkvision and Gnomish cunnung')
+        print('You have chosen to be a Gnome. This means that you have Darkvision and Gnomish cunning')
         print('Gnome\'s energy and enthusiasm for living shines through every inch of her or his tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles (beneath their prodigious noses), and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome’s insatiable interest in everything around.')
-        print('Darkvision: Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.')
+        darkvision()
         print('Gnomish cunning You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.')
+        print('You also can speak read and write Common, and Gnomish')
+
 
 def dwarf():
     print('You have chosen Dwarf. This means that you have Darkvision, Dwarven resilience, Dwarven combat training, and Stone cutting')
     print()
-    print('Darkvision is \"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.\"')
-    print('Dwarven Resilience is \"You have advantage on saving throws against poison,/ and you have resistance against poison damage (explained in the \“Combat\” section).\"')
-    print('Dwarven combat training \"You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.\"')
-    print('Stonecutting is \"Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.\"')
+    darkvision()
+    print('Dwarven Resilience is an ability that gives you advantage on saving throws against poison, and you have resistance against poison damage.')
+    print('Dwarven combat training gives you proficiency with weapons such as the battleaxe, handaxe, light hammer, and warhammer.')
+    print('Stonecutting is a trait that activates whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.')
     print('Please choose one of these three artisan\'s tools. Smiths tools, Brewer\'s tools, or Mason\'s tools.')
     art = input()
     if art == "smith\'s tools" or art == "Smith\'s tools" or art == "smiths tools" or art == "Smiths tools":
@@ -40,6 +49,30 @@ def dwarf():
         print('You may have spelled your answer incorrectly.')
 
 
+def human():
+    print('You have chosen Human. This means that you get a +1 to all stats and you can choose another language to speak other than common.')
+    print('Here is a list of all the other languages.')
+    print(lang)
+    usrlang = input()
+    if usrlang == "abyssal" or usrlang == "Abyssal" or usrlang == "celestial" or usrlang == "Celestial" or usrlang == "deep speech" or usrlang == "Deep speech" or usrlang == "Deep Speech" or usrlang == "Draconic" or usrlang == "draconic" or usrlang == "dwarvish" or usrlang == "Dwarvish" or usrlang == "elvish" or usrlang == "Elvish" or usrlang == "giant" or usrlang == "Giant" or usrlang == "gith" or usrlang == "Gith" or usrlang == "gnomish" or usrlang == "Gnomish" or usrlang == "goblin" or usrlang == "Goblin" or usrlang == "halfling" or usrlang == "Halfling" or usrlang == "infernal" or usrlang == "Infernal" or usrlang == "kraul" or usrlang == "Kraul" or usrlang == "loxodon" or usrlang == "Loxodon" or usrlang == "minotaur" or usrlang == "Minotaur" or usrlang == "orc" or usrlang == "Orc" or usrlang == "primordial" or usrlang == "Primordial" or usrlang == "sylvan" or usrlang == "Sylvan" or usrlang == "undercommon" or usrlang == "Undercommon":
+        print("You can speak read and write common and", usrlang)
+
+
+def halfling():
+    print("You have chosen Halfling. This means that you have a +2 to dexterity, as well as the skills Lucky, Brave, and Halfling nimbleness. Halflings are able to speak, read, and write common, and Halfling, also they are considered small creatures.")
+    print()
+    print("Lucky is a skill that activates when you roll a 1 on the d20 for an attack roll, ability check, or saving throw, it lets you reroll the die however you must take the new roll as your roll.")
+    print("Brave is a skill that gives you have advantage on saving throws against being frightened.")
+    print("And last but not least there is Halfling nimbleness which is an ablility that allows you to move through the space of any creature that is of a size larger than yours.")
+
+
+def tefling():
+    print("You have chosen Tiefling. This means that you have a +1 in intelligence, a +2 in charisma, you also have Darkvision, Hellish Resistance, Infernal Legacy, You can also speak, read, and write common and infernal.")
+    print()
+    darkvision()
+    print("Hellish Resistance is a trait that gives you resistance to fire damage (meaning that you take half damage from fire attacks).")
+    print("Infernal Legacy is a trait that gives you the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.")
+
 
 def barbarian():
     print('You have chosen Barbarian. This means that you have Rage, and Unarmored defense.')
@@ -50,12 +83,15 @@ def barbarian():
     print()
     print('Unarmored Defense is a passive skill for barbarians. ')
     print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constiusion modifier.')
+
+
 def cla():
-    races = "Gnome, " "Dwarf"  #the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
+    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling" # the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
     print('Now please pick the race of your character.')
     print(races)
 
-classes = 'Barbarian'  #', ' 'Bard' #the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
+
+classes = 'Barbarian'  # 'Bard' #the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
 print(classes)
 usrclass = input()
 if usrclass == "barbarian" or usrclass == "Barbarian":
@@ -65,9 +101,27 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
     if usrace == "gnome" or usrace == "Gnome":
         intel = intel + 2
         gnome()
-    elif usrace == "dwarf" or "Dwarf":
+    elif usrace == "dwarf" or usrace == "Dwarf":
         con = con + 2
         dwarf()
+    elif usrace == "human" or usrace == "Human":
+        strength = strength + 1
+        dex = dex + 1
+        con = con + 1
+        intel = intel + 1
+        wis = wis + 1
+        char = char + 1
+        human()
+    elif usrace == "halfling" or usrace == "Halfling":
+        dex = dex + 2
+        halfling()
+    elif usrace == "tiefling" or usrace == "Tiefling":
+        intel = intel + 1
+        char = char + 2
+        tefling()
+    # elif
+
+
 
 else:
-    print('Please pick your class, and be sure that it is spelled correctly.')
+    print('Please restart the program, and be sure that you spell your answers how they are shown.')
