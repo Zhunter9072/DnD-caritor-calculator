@@ -74,6 +74,36 @@ def tefling():
     print("Infernal Legacy is a trait that gives you the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.")
 
 
+def dragonborn():
+    ancestor = "Black, " "Blue, " "Brass, " "Bronze, " "Copper, " "Gold, " "Green, " "Red, " "Silver, " "White."
+    print("You have chosen Dragonborn. This means that you have a +2 in strength, a +1 in charisma, you also have Draconic ancestry, a breath weapon, and a damage resistance")
+    print("Please choose your Draconic ancestry.")
+    print(ancestor)
+    usrinput = input()
+    if usrinput == "black" or usrinput == "Black":
+        print("You have chosen to have Black Dragon ancestry this means that you're breath weapon does acid damage and hits in a 5 by 30ft line and does 2d6 acid damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to acid damage.")
+    elif usrinput == "blue" or usrinput == "Blue":
+        print("You have chosen to have Blue Dragon ancestry this means that you're breath weapon does lightning damage and hits in a 5 by 30ft line and does 2d6 lightning damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to lightning damage.")
+    elif usrinput == "brass" or usrinput == "Brass":
+        print("You have chosen to have Brass Dragon ancestry this means that you're breath weapon does fire damage and hits in a 5 by 30ft line and does 2d6 fire damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to fire damage.")
+    elif usrinput == "bronze" or usrinput == "Bronze":
+        print("You have chosen to have Bronze Dragon ancestry this means that you're breath weapon does lightning damage and hits in a 5 by 30ft line and does 2d6 lightning damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to lightning damage.")
+    elif usrinput == "copper" or usrinput == "Copper":
+        print("You have chosen to have Copper Dragon ancestry this means that you're breath weapon does acid damage and hits in a 5 by 30ft line and does 2d6 acid damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to acid damage.")
+    elif usrinput == "gold" or usrinput == "Gold":
+        print("You have chosen to have Gold Dragon ancestry this means that you're breath weapon does fire damage and hits in a 15ft cone and does 2d6 fire damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to fire damage.")
+    elif usrinput == "green" or usrinput == "Green":
+        print("You have chosen to have Green Dragon ancestry this means that you're breath weapon does poison damage and hits in a 15ft cone and does 2d6 poison damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to poison damage.")
+    elif usrinput == "red" or usrinput == "Red":
+        print("You have chosen to have Red Dragon ancestry this means that you're breath weapon does fire damage and hits in a 15ft cone and does 2d6 fire damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to fire damage.")
+    elif usrinput == "silver" or usrinput == "Silver":
+        print("You have chosen to have Silver Dragon ancestry this means that you're breath weapon does cold damage and hits in a 15ft cone and does 2d6 cold damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to cold damage.")
+    elif usrinput == "white" or usrinput == "White":
+        print("You have chosen to have White Dragon ancestry this means that you're breath weapon does cold damage and hits in a 15ft cone and does 2d6 cold damage if the target creature fails the save DC(the way you calculate the DC for this is 8+ your constitution modifier + your proficiency bonus), this also means that you have a resistance to cold damage.")
+    else:
+        print("You may have spelled something wrong. Please restart the program.")
+
+
 def barbarian():
     print('You have chosen Barbarian. This means that you have Rage, and Unarmored defense.')
     print()
@@ -86,7 +116,7 @@ def barbarian():
 
 
 def cla():
-    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling" # the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
+    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn" # the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
     print('Now please pick the race of your character.')
     print(races)
 
@@ -119,9 +149,11 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
         intel = intel + 1
         char = char + 2
         tefling()
-    # elif
-
-
+    elif usrace == "dragonborn" or usrace == "Dragonborn":
+        strength = strength + 2
+        char = char + 1
+        dragonborn()
+        print("You can speak read and write Draconic and common.")
 
 else:
     print('Please restart the program, and be sure that you spell your answers how they are shown.')
