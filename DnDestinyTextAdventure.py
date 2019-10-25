@@ -104,6 +104,16 @@ def dragonborn():
         print("You may have spelled something wrong. Please restart the program.")
 
 
+def elf():
+    print("You have chosen Elf this means that you gain a +2 to dexterity, darkvision, keen senses, fey ancestry, and trance.")
+    print()
+    darkvision()
+    print("Keen Senses is a trait that gives you proficiency in the perception skill.")
+    print("Fey Ancestry is a trait that gives you advantage on saving throws against being charmed, also you cannot be put to sleep by magical means")
+    print("Trance is a trait for Elves which means that Elves do not actually sleep instead they go in to a deep meditation for 4 hours.")
+    print("In addition to this you can speak read and write in common and elvish.")
+
+
 def barbarian():
     print('You have chosen Barbarian. This means that you have Rage, and Unarmored defense.')
     print()
@@ -115,8 +125,8 @@ def barbarian():
     print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constiusion modifier.')
 
 
-def cla():
-    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn" # the races are Dragonborn, Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
+def cla(): # the remaining races are half-elf and half-orc
+    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn, " "Elf" # the races are Dragonborn Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
     print('Now please pick the race of your character.')
     print(races)
 
@@ -154,6 +164,10 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
         char = char + 1
         dragonborn()
         print("You can speak read and write Draconic and common.")
+    elif usrace == "elf" or usrace == "Elf":
+        dex = dex + 2
+        elf()
+
 
 else:
     print('Please restart the program, and be sure that you spell your answers how they are shown.')
