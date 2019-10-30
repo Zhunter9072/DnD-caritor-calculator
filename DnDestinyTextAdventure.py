@@ -23,11 +23,11 @@ def darkvision():
 
 
 def gnome():
-        print('You have chosen to be a Gnome. This means that you have Darkvision and Gnomish cunning')
-        print('Gnome\'s energy and enthusiasm for living shines through every inch of her or his tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles (beneath their prodigious noses), and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome’s insatiable interest in everything around.')
-        darkvision()
-        print('Gnomish cunning You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.')
-        print('You also can speak read and write Common, and Gnomish')
+    print('You have chosen to be a Gnome. This means that you have Darkvision and Gnomish cunning')
+    print('Gnome\'s energy and enthusiasm for living shines through every inch of her or his tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles (beneath their prodigious noses), and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome’s insatiable interest in everything around.')
+    darkvision()
+    print('Gnomish cunning You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.')
+    print('You also can speak read and write Common, and Gnomish')
 
 
 def dwarf():
@@ -114,6 +114,16 @@ def elf():
     print("In addition to this you can speak read and write in common and elvish.")
 
 
+def halfork():
+    print("You have chosen Half-Orc. This means that you have a + 2 in strength a + 1 in constitution, Darkvision, Menacing, Relentless endurance, and Savage attacks.")
+    print()
+    darkvision()
+    print("Menacing is a skill that gives proficiency in the intimidation skill.")
+    print("Relentless endurance is a skill that gives you the ability that if you were to be reduced to 0 hitpoints you instad get reduced to 1 HP however this can only be used once for every long rest.")
+    print("Savage attacks is a skill that when you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.")
+    print("You can also speak read and write common and orc.")
+
+
 def barbarian():
     print('You have chosen Barbarian. This means that you have Rage, and Unarmored defense.')
     print()
@@ -125,8 +135,8 @@ def barbarian():
     print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constiusion modifier.')
 
 
-def cla(): # the remaining races are half-elf and half-orc
-    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn, " "Elf" # the races are Dragonborn Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
+def cla():  # the remaining races are half-elf and half-orc
+    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn, " "Elf, " "Half-Orc"  # the races are Dragonborn Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
     print('Now please pick the race of your character.')
     print(races)
 
@@ -167,6 +177,10 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
     elif usrace == "elf" or usrace == "Elf":
         dex = dex + 2
         elf()
+    elif usrace == "half orc" or usrace == "Half orc" or usrace == "Half Orc" or usrace == "halforc" or usrace == "Halforc":
+        strength = strength + 2
+        con = con + 1
+        halfork()
 
 
 else:
