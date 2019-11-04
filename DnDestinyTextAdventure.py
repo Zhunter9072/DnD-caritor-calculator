@@ -109,7 +109,7 @@ def elf():
     print()
     darkvision()
     print("Keen Senses is a trait that gives you proficiency in the perception skill.")
-    print("Fey Ancestry is a trait that gives you advantage on saving throws against being charmed, also you cannot be put to sleep by magical means")
+    print("Fey Ancestry is a trait that gives you advantage on saving throws against being charmed, also you cannot be put to sleep by magical means.")
     print("Trance is a trait for Elves which means that Elves do not actually sleep instead they go in to a deep meditation for 4 hours.")
     print("In addition to this you can speak read and write in common and elvish.")
 
@@ -119,9 +119,17 @@ def halfork():
     print()
     darkvision()
     print("Menacing is a skill that gives proficiency in the intimidation skill.")
-    print("Relentless endurance is a skill that gives you the ability that if you were to be reduced to 0 hitpoints you instad get reduced to 1 HP however this can only be used once for every long rest.")
+    print("Relentless endurance is a skill that gives you the ability that if you were to be reduced to 0 hitpoints you instead get reduced to 1 HP however this can only be used once for every long rest.")
     print("Savage attacks is a skill that when you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.")
     print("You can also speak read and write common and orc.")
+
+
+def halfelf():
+    print("This also means that you also get Darkvision, Fey Ancestry, and Skill Versatility.")
+    print()
+    darkvision()
+    print("Fey Ancestry is a trait that gives you advantage on saving throws against being charmed, also you cannot be put to sleep by magical means.")
+    print("Skill Versatility is a trait that gives you proficiency with 2 skills of your choice.")
 
 
 def barbarian():
@@ -136,7 +144,7 @@ def barbarian():
 
 
 def cla():  # the remaining races are half-elf and half-orc
-    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn, " "Elf, " "Half-Orc"  # the races are Dragonborn Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
+    races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn, " "Elf, " "Half-Orc, " "Half-Elf."  # the races are Dragonborn Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
     print('Now please pick the race of your character.')
     print(races)
 
@@ -177,10 +185,100 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
     elif usrace == "elf" or usrace == "Elf":
         dex = dex + 2
         elf()
-    elif usrace == "half orc" or usrace == "Half orc" or usrace == "Half Orc" or usrace == "halforc" or usrace == "Halforc":
+    elif usrace == "half orc" or usrace == "Half orc" or usrace == "Half Orc" or usrace == "halforc" or usrace == "Halforc" or usrace == "Half-Orc" or usrace == "Half-orc":
         strength = strength + 2
         con = con + 1
         halfork()
+    elif usrace == "half elf" or usrace == "Half elf" or usrace == "Half Elf" or usrace == "halfelf" or usrace == "Halfelf" or usrace == "Half-Elf" or usrace == "Half-Elf":
+        char = char + 2
+        print("You have chosen Half-Elf. This means that you get a +2 to Charisma and a + 1 to 2 other abilities of your choice please choose 2.")
+        print("Strength, Dexterity, Constitution, Intelligence, and Wisdom.")
+        stat1 = input()
+        stat2 = input()
+        if stat1 == "Strength" or stat1 == "strength" and stat2 == "Dexterity" or stat2 == "dexterity":
+            strength = strength + 1
+            dex = dex + 1
+            print("You now have a + 1 in strength and dexterity.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Constitution" or stat2 == "constitution":
+            strength = strength + 1
+            con = con + 1
+            print("You now have a + 1 in strength and constitution.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Intelligence" or stat2 == "intelligence":
+            strength = strength + 1
+            intel = intel + 1
+            print("You now have a + 1 in strength and intelligence.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Wisdom" or stat2 == "wisdom":
+            strength = strength + 1
+            intel = intel + 1
+            print("You now have a + 1 in strength and wisdom.") # continue this today
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Strength" or stat2 == "strength":
+            dex = dex + 1
+            strength = strength + 1
+            print("You now have a + 1 in dexterity and strength.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Constitution" or stat2 == "constitution":
+            dex = dex + 1
+            con = con + 1
+            print("You now have a + 1 in dexterity and constitution.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Intelligence" or stat2 == "intelligence":
+            dex = dex + 1
+            intel = intel + 1
+            print("You now have a + 1 in dexterity and intelligence.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Wisdom" or stat2 == "wisdom":
+            dex = dex + 1
+            wis = wis + 1
+            print("You now have a + 1 dexterity and wisdom.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Strength" or stat2 == "stremgth":
+            con = con + 1
+            strength = strength + 1
+            print("You now have a + 1 in constitution and strength.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Dexterity" or stat2 == "dexterity":
+            con = con + 1
+            dex = dex + 1
+            print("You now have a + 1 in constitution and dexterity.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Intelligence" or stat2 == "intelligence":
+            con = con + 1
+            intel = intel + 1
+            print("You now have a + 1 in constitution and intelligence.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Wisdom" or stat2 == "wisdom":
+            con = con + 1
+            wis = wis + 1
+            print("You now have a + 1 in constitution and wisdom.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Strength" or stat2 == "strength":
+            intel = intel + 1
+            strength = strength + 1
+            print("You now have a + 1 in intelligence and strength.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Dexterity" or stat2 == "dexterity":
+            intel = intel + 1
+            dex = dex + 1
+            print("You now have a + 1 in intelligence and dexterity.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Constitution" or stat2 == "constitution":
+            intel = intel + 1
+            con = con + 1
+            print("You now have a + 1 in intelligence and constitution.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Wisdom" or stat2 == "wisdom":
+            intel = intel + 1
+            wis = wis + 1
+            print("You now have a + 1 in intelligence and wisdom.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Strength" or stat2 == "strength":
+            wis = wis + 1
+            strength = strength + 1
+            print("You now have a + 1 in wisdom and strength.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Dexterity" or stat2 == "dexterity":
+            wis = wis + 1
+            dex = dex + 1
+            print("You now have a + 1 in wisdom and dexterity.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Constitution" or stat2 == "constitution":
+            wis = wis + 1
+            con = con + 1
+            print("You now have a + 1 in wisdom and constitution.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Intelligence" or stat2 == "intelligence":
+            wis = wis + 1
+            intel = intel + 1
+            print("You now have a + 1 in wisdom and intelligence.")
+        else:
+            print("You may have spelled something incorrectly please try again.")
+        halfelf()
+
 
 
 else:
