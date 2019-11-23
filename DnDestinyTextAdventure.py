@@ -7,6 +7,24 @@ con = random.randint(1, 20)
 intel = random.randint(1, 20)
 wis = random.randint(1, 20)
 char = random.randint(1, 20)
+acro = dex
+animlhand = wis
+arcana = intel
+athletics = strength
+deception = char
+history = intel
+insite = wis
+intimidation = char
+investigat = intel
+medican = wis
+nature = intel
+perception = wis
+performance = char
+perswasion = char
+religion = intel
+sloh = dex
+stealth = dex
+survival = wis
 print('These are your stats I rolled them for you so you do not have to worry about it.')
 print('Strength ', strength)
 print('Dexterity', dex)
@@ -143,17 +161,148 @@ def barbarian():
     print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constiusion modifier.')
 
 
+def rouge():
+    print("You have chosen to be a rouge this means that you have ")
+
+
 def cla():  # the remaining races are half-elf and half-orc
     races = "Gnome, " "Dwarf, " "Human, " "Halfling, " "Tiefling, " "Dragonborn, " "Elf, " "Half-Orc, " "Half-Elf."  # the races are Dragonborn Dwarf, Elf, Gnome, Half-Elf, Halfling, Half-Orc, Human, and Tiefling.
     print('Now please pick the race of your character.')
     print(races)
 
 
-classes = 'Barbarian'  # 'Bard' #the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
+classes = 'Barbarian, ' 'Rouge'  # 'Bard' #the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
 print(classes)
 usrclass = input()
 if usrclass == "barbarian" or usrclass == "Barbarian":
     barbarian()
+    print("Please choose two(2) proficiencies")
+    print("Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival.")
+    usrpro = input()
+    usrpro1 = input()
+    if usrpro == "Animal Handling" or usrpro == "Animal handling" or usrpro == "animal Handling" or usrpro == "animal handling" and usrpro1 == "Intimidation" or usrpro1 == "intimidation":
+        animlhand = animlhand + 2
+        intimidation = intimidation + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Animal Handling" or usrpro == "Animal handling" or usrpro == "animal Handling" or usrpro == "animal handling" and usrpro1 == "Athletics" or usrpro1 == "athletics":
+        animlhand = animlhand + 2
+        athletics = athletics + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Animal Handling" or usrpro == "Animal handling" or usrpro == "animal Handling" or usrpro == "animal handling" and usrpro1 == "Nature" or usrpro1 == "nature":
+        animlhand = animlhand + 2
+        nature = nature + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Animal Handling" or usrpro == "Animal handling" or usrpro == "animal Handling" or usrpro == "animal handling" and usrpro1 == "Perception" or usrpro1 == "perception":
+        animlhand = animlhand + 2
+        perception = perception + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Animal Handling" or usrpro == "Animal handling" or usrpro == "animal Handling" or usrpro == "animal handling" and usrpro1 == "Survival" or usrpro1 == "survival":
+        animlhand = animlhand + 2
+        survival = survival + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Athletics" or usrpro == "athletics" and usrpro1 == "Animal Handling" or usrpro1 == "Animal handling" or usrpro1 == "animal Handling" or usrpro1 == "animal handling":
+        athletics = athletics + 2
+        animlhand = animlhand + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Athletics" or usrpro == "athletics" and usrpro1 == "Intimidation" or usrpro1 == "intimidation":
+        athletics = athletics + 2
+        intimidation = intimidation + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Athletics" or usrpro == "athletics" and usrpro1 == "Nature" or usrpro1 == "nature":
+        athletics = athletics + 2
+        nature = nature + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Athletics" or usrpro == "athletics" and usrpro1 == "Perception" or usrpro1 == "perception":
+        athletics = athletics + 2
+        perception = perception + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Athletics" or usrpro == "athletics" and usrpro1 == "Survival" or usrpro1 == "survival":
+        athletics = athletics + 2
+        survival = survival + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Intimidation" or usrpro == "intimidation" and usrpro1 == "Athletics" or usrpro1 == "athletics":
+        intimidation = intimidation + 2
+        athletics = athletics + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Intimidation" or usrpro == "intimidation" and usrpro1 == "Animal Handling" or usrpro1 == "Animal handling" or usrpro1 == "animal Handling" or usrpro1 == "animal handling":
+        intimidation = intimidation + 2
+        animlhand = animlhand + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Intimidation" or usrpro == "intimidation" and usrpro1 == "Nature" or usrpro1 == "nature":
+        intimidation = intimidation + 2
+        nature = nature + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Intimidation" or usrpro == "intimidation" and usrpro1 == "Perception" or usrpro1 == "perception":
+        intimidation = intimidation + 2
+        perception = perception + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Intimidation" or usrpro == "intimidation" and usrpro1 == "Survival" or usrpro1 == "survival":
+        intimidation = intimidation + 2
+        survival = survival + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Animal Handling" or usrpro1 == "Animal handling" or usrpro1 == "animal Handling" or usrpro1 == "animal handling":
+        nature = nature + 2
+        animlhand = animlhand + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Athletics" or usrpro1 == "athletics":
+        nature = nature + 2
+        athletics = athletics + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Intimidation" or usrpro1 == "intimidation":
+        nature = nature + 2
+        intimidation = intimidation +  2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Perception" or usrpro1 == "perception":
+        nature = nature + 2
+        perception = perception + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Survival" or usrpro1 == "survival":
+        nature = nature + 2
+        survival = survival + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Perception" or usrpro == "perception" and usrpro1 == "Animal Handling" or usrpro1 == "Animal handling" or usrpro1 == "animal Handling" or usrpro1 == "animal handling":
+        perception = perception + 2
+        animlhand = animlhand + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Perception" or usrpro == "perception" and usrpro1 == "Athletics" or usrpro1 == "athletics":
+        perception = perception + 2
+        athletics = athletics + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Perception" or usrpro == "perception" and usrpro1 == "Intimidation" or usrpro1 == "intimidation":
+        perception = perception + 2
+        intimidation = intimidation + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Perception" or usrpro == "perception" and usrpro1 == "Nature" or usrpro1 == "nature":
+        perception = perception + 2
+        nature = nature + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Perception" or usrpro == "perception" and usrpro1 == "Survival" or usrpro1 == "survival":
+        perception = perception + 2
+        survival = survival + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Survival" or usrpro == "survival" and usrpro1 == "Animal Handling" or usrpro1 == "Animal handling" or usrpro1 == "animal Handling" or usrpro1 == "animal handling":
+        survival = survival + 2
+        animlhand = animlhand + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Survival" or usrpro == "survival" and usrpro1 == "Athletics" or usrpro1 == "athletics":
+        survival = survival + 2
+        athletics = athletics + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Survival" or usrpro == "survival" and usrpro1 == "Intimidation" or usrpro1 == "intimidation":
+        survival = survival + 2
+        intimidation = intimidation + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Survival" or usrpro == "survival" and usrpro1 == "Nature" or usrpro1 == "nature":
+        survival = survival + 2
+        nature = nature + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    elif usrpro == "Survival" or usrpro == "survival" and usrpro1 == "Perception" or usrpro1 == "perception":
+        survival = survival + 2
+        perception = perception + 2
+        print("You now have a +2 in", usrpro, "and", usrpro1)
+    else:
+        print("You may have inputted something wrong please restart the program")
+
     cla()
     usrace = input()
     if usrace == "gnome" or usrace == "Gnome":
@@ -188,6 +337,134 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
     elif usrace == "half orc" or usrace == "Half orc" or usrace == "Half Orc" or usrace == "halforc" or usrace == "Halforc" or usrace == "Half-Orc" or usrace == "Half-orc":
         strength = strength + 2
         con = con + 1
+        halfork()
+    elif usrace == "half elf" or usrace == "Half elf" or usrace == "Half Elf" or usrace == "halfelf" or usrace == "Halfelf" or usrace == "Half-Elf" or usrace == "Half-Elf":
+        char = char + 2
+        print("You have chosen Half-Elf. This means that you get a +2 to Charisma and a + 1 to 2 other abilities of your choice please choose 2.")
+        print("Strength, Dexterity, Constitution, Intelligence, and Wisdom.")
+        stat1 = input()
+        stat2 = input()
+        if stat1 == "Strength" or stat1 == "strength" and stat2 == "Dexterity" or stat2 == "dexterity":
+            strength = strength + 1
+            dex = dex + 1
+            print("You now have a + 1 in strength and dexterity.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Constitution" or stat2 == "constitution":
+            strength = strength + 1
+            con = con + 1
+            print("You now have a + 1 in strength and constitution.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Intelligence" or stat2 == "intelligence":
+            strength = strength + 1
+            intel = intel + 1
+            print("You now have a + 1 in strength and intelligence.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Wisdom" or stat2 == "wisdom":
+            strength = strength + 1
+            wis = wis + 1
+            print("You now have a + 1 in strength and wisdom.") # continue this today
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Strength" or stat2 == "strength":
+            dex = dex + 1
+            strength = strength + 1
+            print("You now have a + 1 in dexterity and strength.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Constitution" or stat2 == "constitution":
+            dex = dex + 1
+            con = con + 1
+            print("You now have a + 1 in dexterity and constitution.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Intelligence" or stat2 == "intelligence":
+            dex = dex + 1
+            intel = intel + 1
+            print("You now have a + 1 in dexterity and intelligence.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Wisdom" or stat2 == "wisdom":
+            dex = dex + 1
+            wis = wis + 1
+            print("You now have a + 1 dexterity and wisdom.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Strength" or stat2 == "stremgth":
+            con = con + 1
+            strength = strength + 1
+            print("You now have a + 1 in constitution and strength.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Dexterity" or stat2 == "dexterity":
+            con = con + 1
+            dex = dex + 1
+            print("You now have a + 1 in constitution and dexterity.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Intelligence" or stat2 == "intelligence":
+            con = con + 1
+            intel = intel + 1
+            print("You now have a + 1 in constitution and intelligence.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Wisdom" or stat2 == "wisdom":
+            con = con + 1
+            wis = wis + 1
+            print("You now have a + 1 in constitution and wisdom.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Strength" or stat2 == "strength":
+            intel = intel + 1
+            strength = strength + 1
+            print("You now have a + 1 in intelligence and strength.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Dexterity" or stat2 == "dexterity":
+            intel = intel + 1
+            dex = dex + 1
+            print("You now have a + 1 in intelligence and dexterity.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Constitution" or stat2 == "constitution":
+            intel = intel + 1
+            con = con + 1
+            print("You now have a + 1 in intelligence and constitution.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Wisdom" or stat2 == "wisdom":
+            intel = intel + 1
+            wis = wis + 1
+            print("You now have a + 1 in intelligence and wisdom.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Strength" or stat2 == "strength":
+            wis = wis + 1
+            strength = strength + 1
+            print("You now have a + 1 in wisdom and strength.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Dexterity" or stat2 == "dexterity":
+            wis = wis + 1
+            dex = dex + 1
+            print("You now have a + 1 in wisdom and dexterity.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Constitution" or stat2 == "constitution":
+            wis = wis + 1
+            con = con + 1
+            print("You now have a + 1 in wisdom and constitution.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Intelligence" or stat2 == "intelligence":
+            wis = wis + 1
+            intel = intel + 1
+            print("You now have a + 1 in wisdom and intelligence.")
+        else:
+            print("You may have spelled something incorrectly please try again.")
+        halfelf()
+elif usrclass == "rouge" or usrclass == "Rouge":
+    rouge()
+    cla()
+    usrace = input()
+    if usrace == "gnome" or usrace == "Gnome":
+        intel = intel + 2
+        gnome()
+    elif usrace == "dwarf" or usrace == "Dwarf":
+        con = con + 2
+        dwarf()
+    elif usrace == "human" or usrace == "Human":
+        strength = strength + 1
+        dex = dex + 1
+        con = con + 1
+        intel = intel + 1
+        wis = wis + 1
+        char = char + 1
+        human()
+    elif usrace == "halfling" or usrace == "Halfling":
+        dex = dex + 2
+        halfling()
+    elif usrace == "tiefling" or usrace == "Tiefling":
+        intel = intel + 1
+        char = char + 2
+        tefling()
+    elif usrace == "dragonborn" or usrace == "Dragonborn":
+        strength = strength + 2
+        char = char + 1
+        dragonborn()
+        print("You can speak read and write Draconic and common.")
+    elif usrace == "elf" or usrace == "Elf":
+        dex = dex + 2
+        perception = perception + 2
+        elf()
+    elif usrace == "half orc" or usrace == "Half orc" or usrace == "Half Orc" or usrace == "halforc" or usrace == "Halforc" or usrace == "Half-Orc" or usrace == "Half-orc":
+        strength = strength + 2
+        con = con + 1
+        intimidation = intimidation + 2
         halfork()
     elif usrace == "half elf" or usrace == "Half elf" or usrace == "Half Elf" or usrace == "halfelf" or usrace == "Halfelf" or usrace == "Half-Elf" or usrace == "Half-Elf":
         char = char + 2
@@ -278,7 +555,6 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
         else:
             print("You may have spelled something incorrectly please try again.")
         halfelf()
-
 
 
 else:
