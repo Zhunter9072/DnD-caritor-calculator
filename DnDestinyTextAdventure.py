@@ -1,4 +1,4 @@
-# DnD charactor calculator
+# DnD character calculator
 # this is declaring what the classes and races
 import random
 strength = random.randint(1, 20)
@@ -42,27 +42,27 @@ def darkvision():
 
 def gnome():
     print('You have chosen to be a Gnome. This means that you have Darkvision and Gnomish cunning')
-    print('Gnome\'s energy and enthusiasm for living shines through every inch of her or his tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles (beneath their prodigious noses), and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome’s insatiable interest in everything around.')
+    print("Gnome's energy and enthusiasm for living shines through every inch of her or his tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles (beneath their prodigious noses), and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome’s insatiable interest in everything around.")
     darkvision()
     print('Gnomish cunning You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.')
     print('You also can speak read and write Common, and Gnomish')
 
 
 def dwarf():
-    print('You have chosen Dwarf. This means that you have Darkvision, Dwarven resilience, Dwarven combat training, and Stone cutting')
+    print("You have chosen Dwarf. This means that you have Darkvision, Dwarven resilience, Dwarven combat training, and Stone cutting.")
     print()
     darkvision()
-    print('Dwarven Resilience is an ability that gives you advantage on saving throws against poison, and you have resistance against poison damage.')
-    print('Dwarven combat training gives you proficiency with weapons such as the battleaxe, handaxe, light hammer, and warhammer.')
-    print('Stonecutting is a trait that activates whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.')
-    print('Please choose one of these three artisan\'s tools. Smiths tools, Brewer\'s tools, or Mason\'s tools.')
+    print("Dwarven Resilience is an ability that gives you advantage on saving throws against poison, and you have resistance against poison damage.")
+    print("Dwarven combat training gives you proficiency with weapons such as battleaxes, handaxes, light hammers, and warhammers.")
+    print("Stonecunning is a trait that activates whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.")
+    print("Please choose one of these three artisan's tools. Smiths tools, Brewer's tools, or Mason's tools.")
     art = input()
-    if art == "smith\'s tools" or art == "Smith\'s tools" or art == "smiths tools" or art == "Smiths tools":
-        print('You have proficancy with Smith\'s tools.')
+    if art == "smith's tools" or art == "Smith's tools" or art == "smiths tools" or art == "Smiths tools":
+        print("You have proficiency with Smith's tools.")
     elif art == "brewer\'s tools" or art == "Brewer\'s tools" or art == "brewers tools" or art == "Brewers tools":
-        print('You have proficancy with Brewer\'s tools.')
-    elif art == "mason\'s tools" or art == "Mason\'s tools" or art == "masons tools" or art == "Masons tools":
-        print('You have proficancy with Mason\'s tools.')
+        print("You have proficiency with Brewer's tools.")
+    elif art == "mason's tools" or art == "Mason's tools" or art == "masons tools" or art == "Masons tools":
+        print("You have proficiency with Mason's tools.")
     else:
         print('You may have spelled your answer incorrectly.')
 
@@ -79,9 +79,9 @@ def human():
 def halfling():
     print("You have chosen Halfling. This means that you have a +2 to dexterity, as well as the skills Lucky, Brave, and Halfling nimbleness. Halflings are able to speak, read, and write common, and Halfling, also they are considered small creatures.")
     print()
-    print("Lucky is a skill that activates when you roll a 1 on the d20 for an attack roll, ability check, or saving throw, it lets you reroll the die however you must take the new roll as your roll.")
+    print("Lucky is a skill that activates when you roll a 1 on the d20 for an attack roll, ability check, or saving throw, it lets you re-roll the die however you must take the new roll as your roll.")
     print("Brave is a skill that gives you have advantage on saving throws against being frightened.")
-    print("And last but not least there is Halfling nimbleness which is an ablility that allows you to move through the space of any creature that is of a size larger than yours.")
+    print("And last but not least there is Halfling nimbleness which is an ability that allows you to move through the space of any creature that is of a size larger than yours.")
 
 
 def tefling():
@@ -137,7 +137,7 @@ def halfork():
     print()
     darkvision()
     print("Menacing is a skill that gives proficiency in the intimidation skill.")
-    print("Relentless endurance is a skill that gives you the ability that if you were to be reduced to 0 hitpoints you instead get reduced to 1 HP however this can only be used once for every long rest.")
+    print("Relentless endurance is a skill that gives you the ability that if you were to be reduced to 0 hit points you instead get reduced to 1 HP however this can only be used once for every long rest.")
     print("Savage attacks is a skill that when you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.")
     print("You can also speak read and write common and orc.")
 
@@ -155,10 +155,10 @@ def barbarian():
     print()
     print('Rage is an ability that you must activate as a bonus action. '
           'It gives you advantage on strength checks and strength saving throws.')
-    print('It also gives you a bonus to strength attacks, at first level it is a +2 to the attack roll and it increses when you level up.')
+    print('It also gives you a bonus to strength attacks, at first level it is a +2 to the attack roll and it increases when you level up.')
     print()
-    print('Unarmored Defense is a passive skill for barbarians. ')
-    print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constiusion modifier.')
+    print('Unarmored Defense is a passive skill.')
+    print('It changes your armor class while not wearing armor to 10 + your dex modifier + your Constitution modifier.')
 
 
 def rouge():
@@ -173,7 +173,7 @@ def cla():  # the remaining races are half-elf and half-orc
     print(races)
 
 
-classes = 'Barbarian, ' 'Fighter'  # 'Bard' #the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
+classes = 'Barbarian, ' 'Fighter, ' 'Rogue, ' 'Monk' # the classes are Barbarian, Warlock, Bard, Wizard, Rogue, Monk, Sorcerer, Fighter, Cleric, Paladin, Druid, and Ranger.
 print(classes)
 usrclass = input()
 if usrclass == "barbarian" or usrclass == "Barbarian":
@@ -252,7 +252,7 @@ if usrclass == "barbarian" or usrclass == "Barbarian":
         print("You now have a +2 in", usrpro, "and", usrpro1)
     elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Intimidation" or usrpro1 == "intimidation":
         nature = nature + 2
-        intimidation = intimidation +  2
+        intimidation = intimidation + 2
         print("You now have a +2 in", usrpro, "and", usrpro1)
     elif usrpro == "Nature" or usrpro == "nature" and usrpro1 == "Perception" or usrpro1 == "perception":
         nature = nature + 2
@@ -436,29 +436,30 @@ elif usrclass == "rogue" or usrclass == "Rogue":
     usrpro = input()
     usrpro1 = input()
     usrpro2 = input()
-    usrpro3 = input()
-    if usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Insight" or usrpro3 == "insight":
+    usrpro3 = input() # Do this for all of them
+    if usrpro == "Acrobatics" or usrpro == "acrobatics" or usrpro1 == "Acrobatics" or usrpro1 == "acrobatics" or usrpro2 == "Acrobatics" or usrpro2 == "acrobatics"  or usrpro3 == "Acrobatics" or usrpro3 == "acrobatics":
         acro = acro + 2
+    elif usrpro == "Athletics" or usrpro == "athletics" or usrpro1 == "Athletics" or usrpro1 == "athletics" or usrpro2 == "Athletics" or usrpro2 == "athletics" or usrpro3 == "Athletics" or usrpro3 == "athletics":
         athletics = athletics + 2
+    elif usrpro == "Deception" or usrpro == "deception" or usrpro1 == "Deception" or usrpro1 == "deception" or usrpro2 == "Deception" or usrpro2 == "deception" or usrpro3 == "Deception" or usrpro3 == "deception":
         deception = deception + 2
-        insite = insite + 2
-        print("You now have plus(+) two(2) in ", usrpro,",", usrpro1,",", usrpro2,", and", usrpro3)
-    elif usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Investigation" or usrpro3 == "investigation":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
-        investigat = investigat + 2
-    elif usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Perception" or usrpro3 == "perception":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
-        perception = perception + 2
-    elif usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Performance" or usrpro3 == "performance":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
+    elif usrpro == "Performance" or usrpro == "performance" or usrpro1 == "Performance" or usrpro1 == "performance" or usrpro2 == "Performance" or usrpro2 == "performance" or usrpro3 == "Performance" or usrpro3 == "performance":
         performance = performance + 2
-
+    elif usrpro == "Insight" or usrpro == "insight" or usrpro1 == "Insight" or usrpro1 == "insight" or usrpro2 == "Insight" or usrpro2 == "insight" or usrpro3 == "Insight" or usrpro3 == "insight":
+        insite = insite + 2
+    elif usrpro == "Intimidation" or usrpro == "intimidation" or usrpro1 == "Intimidation" or usrpro1 == "intimidation" or usrpro2 == "Intimidation" or usrpro2 == "intimidation" or usrpro3 == "Intimidation" or usrpro3 == "intimidation":
+        intimidation = intimidation + 2
+    elif usrpro == "Investigation" or usrpro == "investigation" or usrpro1 == "Investigation" or usrpro1 == "investigation" or usrpro2 == "Investigation" or usrpro2 == "investigation" or usrpro3 == "Investigation" or usrpro3 == "investigation":
+        investigat = investigat + 2
+    elif usrpro == "Perception" or usrpro == "perception" or usrpro1 == "Perception" or usrpro1 == "perception" or usrpro2 == "Perception" or usrpro2 == "perception" or usrpro3 == "Perception" or usrpro3 == "perception":
+        perception = perception + 2
+    elif usrpro == "Persuasion" or usrpro == "persuasion" or usrpro1 == "Persuasion" or usrpro1 == "persuasion" or usrpro2 == "Persuasion" or usrpro2 == "persuasion" or usrpro3 == "Persuasion" or usrpro3 == "persuasion":
+        perswasion = perswasion + 2
+    elif usrpro == "Slight of Hand" or usrpro == "Slight of hand" or usrpro == "Slight Of Hand" or usrpro == "slight of hand" or usrpro1 == "Slight of Hand" or usrpro1 == "Slight of hand" or usrpro1 == "Slight Of Hand" or usrpro1 == "slight of hand" or usrpro2 == "Slight of Hand" or usrpro2 == "Slight of hand" or usrpro2 == "Slight Of Hand" or usrpro2 == "slight of hand" or usrpro3 == "Slight of Hand" or usrpro3 == "Slight of hand" or usrpro3 == "Slight Of Hand" or usrpro3 == "slight of hand":
+        sloh = sloh + 2
+    elif usrpro == "Stealth" or usrpro == "stealth" or usrpro1 == "Stealth" or usrpro1 == "stealth" or usrpro2 == "Stealth" or usrpro2 == "stealth" or usrpro3 == "Stealth" or usrpro3 == "stealth":
+        stealth = stealth + 2
+    print("You now have plus(+) two(2) in ", usrpro,",", usrpro1,",", usrpro2,", and", usrpro3)
     cla()
     usrace = input()
     if usrace == "gnome" or usrace == "Gnome":
@@ -616,7 +617,6 @@ elif usrclass == "Fighter" or usrclass == "fighter":
         print("You have chosen", usrfight, "as a fighting style")
     else:
         print("You may not have fully typed something. Please restart the program")
-
     print("Now we will choose your proficiencies. You can only pick two(2) so choose wisely.")
     print("Your choices are Acrobatics, Animal handling, Athletics, History, Insight, Intimidation, Perception, and Survival")
     usrpro = input()
@@ -816,29 +816,6 @@ elif usrclass == "Fighter" or usrclass == "fighter":
         print("You now have a +2 in", usrpro, "and", usrpro1)
     else:
         print("You may have inputted something wrong please restart the program")
-
-    if usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Insight" or usrpro3 == "insight":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
-        insite = insite + 2
-        print("You now have plus(+) two(2) in ", usrpro,",", usrpro1,",", usrpro2,", and", usrpro3)
-    elif usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Investigation" or usrpro3 == "investigation":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
-        investigat = investigat + 2
-    elif usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Perception" or usrpro3 == "perception":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
-        perception = perception + 2
-    elif usrpro == "Acrobatics" or usrpro == "acrobatics" and usrpro1 == "Athletics" or usrpro1 == "athletics" and usrpro2 == "Deception" or usrpro2 == "deception" and usrpro3 == "Performance" or usrpro3 == "performance":
-        acro = acro + 2
-        athletics = athletics + 2
-        deception = deception + 2
-        performance = performance + 2
-
     cla()
     usrace = input()
     if usrace == "gnome" or usrace == "Gnome":
@@ -965,6 +942,155 @@ elif usrclass == "Fighter" or usrclass == "fighter":
         else:
             print("You may have spelled something incorrectly please try again.")
         halfelf()
-
+elif usrclass == "Monk" or usrclass == "monk":
+    print("You have chosen your class to be monk. This means that you have unarmored defence and marital arts.")
+    print("Unarmored Defense is a passive skill.")
+    print("It changes your armor class while not wearing armor to 10 + your Dexterity modifier + your Wisdom modifier.")
+    print("Marital arts is a skill for monks that allows you gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield. You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon.(this die gets larger as you level) When you make an attack with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action.")
+    print("You also can choose two(2) skills to gain proficiency in.")
+    print("Your choices are Acrobatics, Athletics, History, Insight, Religion, and Stealth")
+    usrpro = input()
+    usrpro1 = input()
+    if usrpro == "Acrobatics" or usrpro == "acrobatics" or usrpro1 == "Acrobatics" or usrpro1 == "acrobatics":
+        acro = acro + 2
+    elif usrpro == "Athletics" or usrpro == "athletics" or usrpro1 == "Athletics" or usrpro1 == "athletics":
+        athletics = athletics + 2
+    elif usrpro == "History" or usrpro == "history" or usrpro1 == "History" or usrpro1 == "history":
+        history = history + 2
+    elif usrpro == "Insight" or usrpro == "insight" or usrpro1 == "Insight" or usrpro1 == "insight":
+        insite = insite + 2
+    elif usrpro == "Religion" or usrpro == "religion" or usrpro1 == "Religion" or usrpro1 == "religion":
+        religion = religion + 2
+    elif usrpro == "Stealth" or usrpro == "stealth" or usrpro1 == "Stealth" or usrpro1 == "stealth":
+        stealth = stealth + 2
+    else:
+        print("Something may be incorrectly spelled. Please restart the program")
+    print("You now have a plus(+) two(2) in", usrpro, "and", usrpro1)
+    cla()
+    usrace = input()
+    if usrace == "gnome" or usrace == "Gnome":
+        intel = intel + 2
+        gnome()
+    elif usrace == "dwarf" or usrace == "Dwarf":
+        con = con + 2
+        dwarf()
+    elif usrace == "human" or usrace == "Human":
+        strength = strength + 1
+        dex = dex + 1
+        con = con + 1
+        intel = intel + 1
+        wis = wis + 1
+        char = char + 1
+        human()
+    elif usrace == "halfling" or usrace == "Halfling":
+        dex = dex + 2
+        halfling()
+    elif usrace == "tiefling" or usrace == "Tiefling":
+        intel = intel + 1
+        char = char + 2
+        tefling()
+    elif usrace == "dragonborn" or usrace == "Dragonborn":
+        strength = strength + 2
+        char = char + 1
+        dragonborn()
+        print("You can speak read and write Draconic and common.")
+    elif usrace == "elf" or usrace == "Elf":
+        dex = dex + 2
+        perception = perception + 2
+        elf()
+    elif usrace == "half orc" or usrace == "Half orc" or usrace == "Half Orc" or usrace == "halforc" or usrace == "Halforc" or usrace == "Half-Orc" or usrace == "Half-orc":
+        strength = strength + 2
+        con = con + 1
+        intimidation = intimidation + 2
+        halfork()
+    elif usrace == "half elf" or usrace == "Half elf" or usrace == "Half Elf" or usrace == "halfelf" or usrace == "Halfelf" or usrace == "Half-Elf" or usrace == "Half-Elf":
+        char = char + 2
+        print("You have chosen Half-Elf. This means that you get a +2 to Charisma and a + 1 to 2 other abilities of your choice please choose 2.")
+        print("Strength, Dexterity, Constitution, Intelligence, and Wisdom.")
+        stat1 = input()
+        stat2 = input()
+        if stat1 == "Strength" or stat1 == "strength" and stat2 == "Dexterity" or stat2 == "dexterity":
+            strength = strength + 1
+            dex = dex + 1
+            print("You now have a + 1 in strength and dexterity.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Constitution" or stat2 == "constitution":
+            strength = strength + 1
+            con = con + 1
+            print("You now have a + 1 in strength and constitution.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Intelligence" or stat2 == "intelligence":
+            strength = strength + 1
+            intel = intel + 1
+            print("You now have a + 1 in strength and intelligence.")
+        elif stat1 == "Strength" or stat1 == "strength" and stat2 == "Wisdom" or stat2 == "wisdom":
+            strength = strength + 1
+            intel = intel + 1
+            print("You now have a + 1 in strength and wisdom.") # continue this today
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Strength" or stat2 == "strength":
+            dex = dex + 1
+            strength = strength + 1
+            print("You now have a + 1 in dexterity and strength.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Constitution" or stat2 == "constitution":
+            dex = dex + 1
+            con = con + 1
+            print("You now have a + 1 in dexterity and constitution.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Intelligence" or stat2 == "intelligence":
+            dex = dex + 1
+            intel = intel + 1
+            print("You now have a + 1 in dexterity and intelligence.")
+        elif stat1 == "Dexterity" or stat1 == "dexterity" and stat2 == "Wisdom" or stat2 == "wisdom":
+            dex = dex + 1
+            wis = wis + 1
+            print("You now have a + 1 dexterity and wisdom.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Strength" or stat2 == "stremgth":
+            con = con + 1
+            strength = strength + 1
+            print("You now have a + 1 in constitution and strength.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Dexterity" or stat2 == "dexterity":
+            con = con + 1
+            dex = dex + 1
+            print("You now have a + 1 in constitution and dexterity.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Intelligence" or stat2 == "intelligence":
+            con = con + 1
+            intel = intel + 1
+            print("You now have a + 1 in constitution and intelligence.")
+        elif stat1 == "Constitution" or stat1 == "constitution" and stat2 == "Wisdom" or stat2 == "wisdom":
+            con = con + 1
+            wis = wis + 1
+            print("You now have a + 1 in constitution and wisdom.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Strength" or stat2 == "strength":
+            intel = intel + 1
+            strength = strength + 1
+            print("You now have a + 1 in intelligence and strength.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Dexterity" or stat2 == "dexterity":
+            intel = intel + 1
+            dex = dex + 1
+            print("You now have a + 1 in intelligence and dexterity.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Constitution" or stat2 == "constitution":
+            intel = intel + 1
+            con = con + 1
+            print("You now have a + 1 in intelligence and constitution.")
+        elif stat1 == "Intelligence" or stat1 == "intelligence" and stat2 == "Wisdom" or stat2 == "wisdom":
+            intel = intel + 1
+            wis = wis + 1
+            print("You now have a + 1 in intelligence and wisdom.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Strength" or stat2 == "strength":
+            wis = wis + 1
+            strength = strength + 1
+            print("You now have a + 1 in wisdom and strength.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Dexterity" or stat2 == "dexterity":
+            wis = wis + 1
+            dex = dex + 1
+            print("You now have a + 1 in wisdom and dexterity.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Constitution" or stat2 == "constitution":
+            wis = wis + 1
+            con = con + 1
+            print("You now have a + 1 in wisdom and constitution.")
+        elif stat1 == "Wisdom" or stat1 == "wisdom" and stat2 == "Intelligence" or stat2 == "intelligence":
+            wis = wis + 1
+            intel = intel + 1
+            print("You now have a + 1 in wisdom and intelligence.")
+        else:
+            print("You may have spelled something incorrectly please try again.")
+        halfelf()
 else:
     print('Please restart the program, and be sure that you spell your answers how they are shown.')
